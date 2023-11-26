@@ -13,8 +13,6 @@ finish-args:
   - --device=dri
   # Needs to talk to the network:
   - --share=network
-  # Access to GNOME Virtual FileSystem
-  - --filesystem=xdg-run/gvfsd
 cleanup:
   - "*.a"
   - "*.la"
