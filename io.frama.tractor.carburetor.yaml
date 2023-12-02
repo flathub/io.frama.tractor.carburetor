@@ -11,14 +11,23 @@ finish-args:
   - --socket=wayland
   # DRI access for OpenGL rendering
   - --device=dri
-  # Needs to talk to the network:
+  # Needs to talk to the network
   - --share=network
+  # Use host dconf
+  - --filesystem=xdg-run/dconf
+  - --filesystem=~/.config/dconf:ro
+  - --talk-name=ca.desrt.dconf
+  - --env=DCONF_USER_CONFIG_DIR=.config/dconf
+  - --env=GIO_EXTRA_MODULES=/app/lib/gio/modules/
+
 cleanup:
   - "*.a"
   - "*.la"
   - /etc
   - /include
   - /lib/pkgconfig
+  - /libexec
+  - /share/dbus-1
 modules:
   - python3-requirements.yaml
   - name: libevent
@@ -36,6 +45,22 @@ modules:
       - type: archive
         url: https://github.com/torproject/tor/archive/refs/tags/tor-0.4.7.13.tar.gz
         sha256: a17b0e085a9927dffd414ed54b0c0f16caf1e8efdaba72878575c005c67856a1
+  - name: dconf
+    buildsystem: meson
+    config-opts:
+      - -Dbash_completion=false
+      - -Dman=false
+      - -Dgtk_doc=false
+      - -Dsystemduserunitdir=/app/lib/systemd/user
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
+        sha256: cf7f22a4c9200421d8d3325c5c1b8b93a36843650c9f95d6451e20f0bcb24533
+        x-checker-data:
+          - type: gnome
+            name: dconf
+      - type: patch
+        path: dconf-override.patch
   - name: tractor
     buildsystem: simple
     build-commands:
