@@ -86,3 +86,5 @@ modules:
       - type: archive
         url: https://framagit.org/tractor/carburetor/-/archive/4.2.0/carburetor-4.2.0.tar.gz
         sha256: efed552c615199cd7d6453af972cb1e5f218cf1437932263e2b677a2a56882a0
+      - type: patch
+        path: mainwindow-hide.patch
