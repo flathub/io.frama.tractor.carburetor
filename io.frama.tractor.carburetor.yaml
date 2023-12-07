@@ -37,14 +37,15 @@ modules:
         sha256: 92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb
   - name: tor
     config-opts:
+      - --disable-module-relay
       - --disable-asciidoc
       - --disable-manpage
       - --disable-html-manual
       - --disable-unittests
     sources:
       - type: archive
-        url: https://github.com/torproject/tor/archive/refs/tags/tor-0.4.7.13.tar.gz
-        sha256: a17b0e085a9927dffd414ed54b0c0f16caf1e8efdaba72878575c005c67856a1
+        url: https://archive.torproject.org/tor-package-archive/tor-0.4.8.9.tar.gz
+        sha256: 59bb7d8890f6131b4ce5344f3dcea5deb2182b7f4f10ff0cb4e4d81f11b2cf65
   - name: dconf
     buildsystem: meson
     config-opts:
@@ -78,13 +79,11 @@ modules:
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
         --prefix=${FLATPAK_DEST} . --no-build-isolation
-      - install -Dm644 src/carburetor/desktop/io.frama.tractor.carburetor.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo
-      - install -Dm644 src/carburetor/desktop/io.frama.tractor.carburetor.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps
-      - install -Dm644 src/carburetor/desktop/io.frama.tractor.carburetor-symbolic.svg -t ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps
-      - install -Dm644 src/carburetor/desktop/io.frama.tractor.carburetor.desktop -t ${FLATPAK_DEST}/share/applications
+      - install -Dm644 data/io.frama.tractor.carburetor.desktop -t ${FLATPAK_DEST}/share/applications
+      - install -Dm644 data/metainfo/io.frama.tractor.carburetor.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo
+      - install -Dm644 data/icons/scalable/apps/io.frama.tractor.carburetor.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps
+      - install -Dm644 data/icons/symbolic/apps/io.frama.tractor.carburetor-symbolic.svg -t ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps
     sources:
       - type: archive
-        url: https://framagit.org/tractor/carburetor/-/archive/4.2.0/carburetor-4.2.0.tar.gz
-        sha256: efed552c615199cd7d6453af972cb1e5f218cf1437932263e2b677a2a56882a0
-      - type: patch
-        path: mainwindow-hide.patch
+        url: https://framagit.org/tractor/carburetor/-/archive/4.3.0/carburetor-4.3.0.tar.gz
+        sha256: 30701ecec9947a38db3db8e163c7b321b63219f46b608eecf61a735914714ede
