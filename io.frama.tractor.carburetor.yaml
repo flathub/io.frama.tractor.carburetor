@@ -35,6 +35,11 @@ modules:
       - type: archive
         url: https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
         sha256: 92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb
+        x-checker-data:
+          - type: html
+            url: https://libevent.org/
+            pattern: <link>(https://github.com/libevent/libevent/releases/download/release-([\\d\\.]+)-stable/libevent-([\\d\\.]+)-stable.tar.gz)</link>
+            sort-matches: false
   - name: tor
     config-opts:
       - --disable-module-relay
@@ -44,8 +49,13 @@ modules:
       - --disable-unittests
     sources:
       - type: archive
-        url: https://archive.torproject.org/tor-package-archive/tor-0.4.8.9.tar.gz
-        sha256: 59bb7d8890f6131b4ce5344f3dcea5deb2182b7f4f10ff0cb4e4d81f11b2cf65
+        url: https://dist.torproject.org/tor-0.4.8.10.tar.gz
+        sha256: e628b4fab70edb4727715b23cf2931375a9f7685ac08f2c59ea498a178463a86
+        x-checker-data:
+          - type: html
+            url: https://www.torproject.org/download/tor/
+            version-pattern: <td>([\\d\\.]+)</td>
+            url-template: https://dist.torproject.org/tor-$version.tar.gz
   - name: dconf
     buildsystem: meson
     config-opts:
@@ -74,6 +84,10 @@ modules:
       - type: archive
         url: https://framagit.org/tractor/tractor/-/archive/4.1.1/tractor-4.1.1.tar.gz
         sha256: 42df431897d27fcab017e12f549bda474dacb02cba9e4092f2ed4b167d931376
+        x-checker-data:
+          - type: rotating-url
+            url: https://framagit.org/tractor/tractor/-/tags?sort=updated_desc
+            pattern: https://framagit.org/tractor/tractor/-/archive/([\\d\\.]+)/tractor-([\\d\\.]+).tar.gz
   - name: carburetor
     buildsystem: simple
     build-commands:
@@ -85,5 +99,9 @@ modules:
       - install -Dm644 data/icons/symbolic/apps/io.frama.tractor.carburetor-symbolic.svg -t ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps
     sources:
       - type: archive
-        url: https://framagit.org/tractor/carburetor/-/archive/4.3.0/carburetor-4.3.0.tar.gz
-        sha256: 30701ecec9947a38db3db8e163c7b321b63219f46b608eecf61a735914714ede
+        url: https://framagit.org/tractor/carburetor/-/archive/4.4.0/carburetor-4.4.0.tar.gz
+        sha256: 90a9de9cafac4d7e2e444f17b5a79413eaa1a63d06bdfc8cebdda6a4441b22b2
+        x-checker-data:
+          - type: rotating-url
+            url: https://framagit.org/tractor/carburetor/-/tags?sort=updated_desc
+            pattern: https://framagit.org/tractor/carburetor/-/archive/([\\d\\.]+)/carburetor-([\\d\\.]+).tar.gz
