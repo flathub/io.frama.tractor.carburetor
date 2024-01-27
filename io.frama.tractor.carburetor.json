@@ -110,7 +110,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/tractor.git",
-          "tag": "4.4.0",
+          "tag": "4.4.1",
           "x-checker-data": [
             {
               "type": "git",
