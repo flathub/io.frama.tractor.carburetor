@@ -142,6 +142,10 @@
               "is-main-source": true
             }
           ]
+        },
+        {
+          "type": "patch",
+          "path": "appstream_developer_name.patch"
         }
       ]
     }
