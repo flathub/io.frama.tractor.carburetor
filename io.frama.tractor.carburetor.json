@@ -110,7 +110,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/tractor.git",
-          "tag": "4.4.1",
+          "tag": "4.5.0",
           "x-checker-data": [
             {
               "type": "git",
@@ -134,8 +134,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/carburetor.git",
-          "tag": "4.4.0",
-          "commit": "65df6c0f496af74e33216e7cb9fda886d8311c5b",
+          "tag": "4.5.0",
           "x-checker-data": [
             {
               "type": "git",
@@ -143,6 +142,10 @@
               "is-main-source": true
             }
           ]
+        },
+        {
+          "type": "patch",
+          "path": "appstream_developer_name.patch"
         }
       ]
     }

@@ -1,0 +1,13 @@
+diff --git a/data/metainfo/io.frama.tractor.carburetor.metainfo.xml b/data/metainfo/io.frama.tractor.carburetor.metainfo.xml
+index c9fdb78..cf3e094 100644
+--- a/data/metainfo/io.frama.tractor.carburetor.metainfo.xml
++++ b/data/metainfo/io.frama.tractor.carburetor.metainfo.xml
+@@ -14,6 +14,8 @@
+       کشف مرور ناشناس روی تلفن‌ها و رایانه‌ها. کاربراتور که برای گنوم طرّاحی شده، ابرقهرمان پنهانتان برای ماجراجویی‌های برخط است که از تور نیرو می‌گیرد. دیگر نیازی به سر و کله زدن با پرونده‌های سامانه‌ای نیست – با یک اشاره در کاره، دنیای برخطتان امن و محرمانه خواهد شد. تنظیمات قابل شخصی‌سازی هستند، ولی اجباری وجود ندارد. کاربراتور نرم‌افزار آزاد بوده و شما را پشت فرمان قرار می‌دهد. بدون نگرانی، از مرور ناشناستان لذّت ببرید.
+     </p>
+   </description>
++  <developer_name>Tractor Team</developer_name>
++  <developer_name xml:lang="fa">گروه تراکتور</developer_name>
+   <categories>
+     <category>Network</category>
+   </categories>
