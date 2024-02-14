@@ -146,6 +146,10 @@
         {
           "type": "patch",
           "path": "appstream_developer_name.patch"
+        },
+        {
+          "type": "patch",
+          "path": "missed_version.patch"
         }
       ]
     }
