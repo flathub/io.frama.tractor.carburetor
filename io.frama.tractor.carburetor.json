@@ -145,7 +145,7 @@
         },
         {
           "type": "patch",
-          "path": "appstream_developer_name.patch"
+          "path": "appstream_update.patch"
         }
       ]
     }
