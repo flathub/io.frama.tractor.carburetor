@@ -35,8 +35,8 @@ index 49e3350..a19cde2 100644
    <update_contact>dani.behzi_at_ubuntu.com</update_contact>
    <branding>
 -    <color type="primary">#813d9c</color>
-+    <color type="primary" scheme_preference="light">#f2e6c7</color>
-+    <color type="primary" scheme_preference="dark">#2e143c</color>
++    <color type="primary" scheme_preference="light">#f2e6c6</color>
++    <color type="primary" scheme_preference="dark">#421d5e</color>
    </branding>
    <custom>
      <value key="Purism::form_factor">mobile</value>
