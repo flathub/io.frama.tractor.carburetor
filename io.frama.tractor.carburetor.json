@@ -4,6 +4,9 @@
   "runtime-version": "45",
   "sdk": "org.gnome.Sdk",
   "command": "carburetor",
+  "sdk-extensions": [
+    "org.freedesktop.Sdk.Extension.golang"
+  ],
   "finish-args": [
     "--share=ipc",
     "--socket=fallback-x11",
@@ -27,6 +30,7 @@
   ],
   "modules": [
     "python3-requirements.json",
+    "lyrebird/manifest.json",
     {
       "name": "libevent",
       "sources": [
@@ -117,6 +121,10 @@
               "tag-pattern": "^([\d\.]+)$"
             }
           ]
+        },
+        {
+          "type": "patch",
+          "path": "pluggable-transports-paths.patch"
         }
       ]
     },

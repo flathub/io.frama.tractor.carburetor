@@ -1,0 +1,23 @@
+{
+  "name": "lyrebird",
+  "buildsystem": "simple",
+  "build-options": {
+    "append-path": "/usr/lib/sdk/golang/bin",
+    "env": {
+      "GOBIN": "/app/bin",
+      "GOROOT": "/usr/lib/sdk/golang"
+    }
+  },
+  "build-commands": [
+    "CGO_ENABLED=0 go build -mod=vendor -ldflags=\"-X main.lyrebirdVersion=0.2.0\" ./cmd/lyrebird",
+    "install -Dm755 lyrebird -t ${FLATPAK_DEST}/bin"
+  ],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird/-/archive/lyrebird-0.2.0/lyrebird-lyrebird-0.2.0.tar.gz",
+      "sha256": "dd636b4a7cb6f327dfa09707732ca419dabf18bf2bfcb1378fc17d44383edfca"
+    },
+    "go.mod.yml"
+  ]
+}
