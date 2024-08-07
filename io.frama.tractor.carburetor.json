@@ -62,8 +62,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dist.torproject.org/tor-0.4.8.10.tar.gz",
-          "sha256": "e628b4fab70edb4727715b23cf2931375a9f7685ac08f2c59ea498a178463a86",
+          "url": "https://dist.torproject.org/tor-0.4.8.12.tar.gz",
+          "sha256": "ca7cc735d98e3747b58f2f3cc14f804dd789fa0fb333a84dcb6bd70adbb8c874",
           "x-checker-data": [
             {
               "type": "html",
