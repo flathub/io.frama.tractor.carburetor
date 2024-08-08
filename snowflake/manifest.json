@@ -10,7 +10,7 @@
   },
   "build-commands": [
     "cd client && go build -mod=vendor -o snowflake-client",
-    "install -Dm755 client/snowflake-client -t ${FLATPAK_DEST}/bin"
+    "install -Dm755 client/snowflake-client -t ${FLATPAK_DEST}/snowflake/pts"
   ],
   "sources": [
     {

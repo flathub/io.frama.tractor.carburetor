@@ -16,7 +16,7 @@ index bf45372..5b7d0ce 100644
          </key>
          <key type="(sssss)" name="plugable-transport">
 -            <default>("", "", "/usr/bin/obfs4proxy", "/usr/bin/snowflake-client", "/usr/bin/webtunnel-client")</default>
-+            <default>("", "", "/app/bin/lyrebird", "/app/bin/snowflake-client", "/app/bin/lyrebird")</default>
++            <default>("", "", "/app/pts/obfs4proxy", "/app/pts/snowflake-client", "/app/pts/webtunnel-client")</default>
              <summary>Plugable Transport Files</summary>
              <description>path of executables for (none, vanilla, obfs, snowflake, webtunnel)</description>
          </key>

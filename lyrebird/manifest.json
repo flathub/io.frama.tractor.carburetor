@@ -9,8 +9,8 @@
     }
   },
   "build-commands": [
-    "CGO_ENABLED=0 go build -mod=vendor -ldflags=\"-X main.lyrebirdVersion=0.2.0\" ./cmd/lyrebird",
-    "install -Dm755 lyrebird -t ${FLATPAK_DEST}/bin"
+    "CGO_ENABLED=0 go build -mod=vendor -ldflags=\"-X main.lyrebirdVersion=0.2.0\" -o obfs4proxy ./cmd/lyrebird",
+    "install -Dm755 obfs4proxy -t ${FLATPAK_DEST}/lyrebird/pts"
   ],
   "sources": [
     {
