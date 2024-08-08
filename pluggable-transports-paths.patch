@@ -1,0 +1,25 @@
+From 5f2f2689393fb06780bce6a499c5c1f819f445c7 Mon Sep 17 00:00:00 2001
+From: Danial Behzadi <dani.behzi@ubuntu.com>
+Date: Wed, 7 Aug 2024 17:27:12 +0330
+Subject: [PATCH] Change path for pluggable transports in Flatpak version.
+
+---
+ src/tractor/tractor.gschema.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/tractor/tractor.gschema.xml b/src/tractor/tractor.gschema.xml
+index bf45372..5b7d0ce 100644
+--- a/src/tractor/tractor.gschema.xml
++++ b/src/tractor/tractor.gschema.xml
+@@ -42,7 +42,7 @@
+             <description>Whether or not allowing external devices to use this network</description>
+         </key>
+         <key type="(sssss)" name="plugable-transport">
+-            <default>("", "", "/usr/bin/obfs4proxy", "/usr/bin/snowflake-client", "/usr/bin/webtunnel-client")</default>
++            <default>("", "", "/app/pts/obfs4proxy", "/app/pts/snowflake-client", "/app/pts/webtunnel-client")</default>
+             <summary>Plugable Transport Files</summary>
+             <description>path of executables for (none, vanilla, obfs, snowflake, webtunnel)</description>
+         </key>
+-- 
+2.39.2
+

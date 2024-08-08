@@ -1,0 +1,23 @@
+{
+  "name": "snowflake-client",
+  "buildsystem": "simple",
+  "build-options": {
+    "append-path": "/usr/lib/sdk/golang/bin",
+    "env": {
+      "GOBIN": "/app/bin",
+      "GOROOT": "/usr/lib/sdk/golang"
+    }
+  },
+  "build-commands": [
+    "cd client && go build -mod=vendor -o snowflake-client",
+    "install -Dm755 client/snowflake-client -t ${FLATPAK_DEST}/snowflake/pts"
+  ],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/archive/v2.9.2/snowflake-v2.9.2.tar.gz",
+      "sha256": "b539a069eb3996d20a63eef9af59b43adb740ea121c954edf13b2bb6102b7112"
+    },
+    "go.mod.yml"
+  ]
+}

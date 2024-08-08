@@ -4,6 +4,31 @@
   "runtime-version": "45",
   "sdk": "org.gnome.Sdk",
   "command": "carburetor",
+  "sdk-extensions": [
+    "org.freedesktop.Sdk.Extension.golang"
+  ],
+  "add-extensions": {
+    "io.frama.tractor.carburetor.pt": {
+      "directory": "pts",
+      "subdirectories": true,
+      "no-autodownload": true,
+      "autodelete": true
+    },
+    "io.frama.tractor.carburetor.pt.lyrebird": {
+      "directory": "lyrebird",
+      "bundle": true,
+      "merge-dirs": "pts",
+      "no-autodownload": false,
+      "autodelete": true
+    },
+    "io.frama.tractor.carburetor.pt.snowflake": {
+      "directory": "snowflake",
+      "bundle": true,
+      "merge-dirs": "pts",
+      "no-autodownload": false,
+      "autodelete": true
+    }
+  },
   "finish-args": [
     "--share=ipc",
     "--socket=fallback-x11",
@@ -27,6 +52,8 @@
   ],
   "modules": [
     "python3-requirements.json",
+    "lyrebird/manifest.json",
+    "snowflake/manifest.json",
     {
       "name": "libevent",
       "sources": [
@@ -57,8 +84,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dist.torproject.org/tor-0.4.8.10.tar.gz",
-          "sha256": "e628b4fab70edb4727715b23cf2931375a9f7685ac08f2c59ea498a178463a86",
+          "url": "https://dist.torproject.org/tor-0.4.8.12.tar.gz",
+          "sha256": "ca7cc735d98e3747b58f2f3cc14f804dd789fa0fb333a84dcb6bd70adbb8c874",
           "x-checker-data": [
             {
               "type": "html",
@@ -117,6 +144,10 @@
               "tag-pattern": "^([\d\.]+)$"
             }
           ]
+        },
+        {
+          "type": "patch",
+          "path": "pluggable-transports-paths.patch"
         }
       ]
     },
@@ -128,7 +159,8 @@
         "install -Dm644 data/io.frama.tractor.carburetor.desktop -t ${FLATPAK_DEST}/share/applications",
         "install -Dm644 data/metainfo/io.frama.tractor.carburetor.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo",
         "install -Dm644 data/icons/scalable/apps/io.frama.tractor.carburetor.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps",
-        "install -Dm644 data/icons/symbolic/apps/io.frama.tractor.carburetor-symbolic.svg -t ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps"
+        "install -Dm644 data/icons/symbolic/apps/io.frama.tractor.carburetor-symbolic.svg -t ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps",
+        "mkdir ${FLATPAK_DEST}/pts"
       ],
       "sources": [
         {
