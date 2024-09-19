@@ -1,7 +1,7 @@
 {
   "app-id": "io.frama.tractor.carburetor",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "47",
   "sdk": "org.gnome.Sdk",
   "command": "carburetor",
   "sdk-extensions": [
@@ -48,7 +48,7 @@
     "/include",
     "/lib/pkgconfig",
     "/libexec",
-    "/share/dbus-1"
+    "/share/dbus-1/services/ca.desrt.dconf.service"
   ],
   "modules": [
     "python3-requirements.json",
@@ -137,7 +137,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/tractor.git",
-          "tag": "4.5.1",
+	  "commit": "70063108",
           "x-checker-data": [
             {
               "type": "git",
@@ -156,7 +156,8 @@
       "buildsystem": "simple",
       "build-commands": [
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} . --no-build-isolation",
-        "install -Dm644 data/io.frama.tractor.carburetor.desktop -t ${FLATPAK_DEST}/share/applications",
+        "install -Dm644 data/applications/io.frama.tractor.carburetor.desktop -t ${FLATPAK_DEST}/share/applications",
+        "install -Dm644 data/dbus-1/services/io.frama.tractor.carburetor.service -t ${FLATPAK_DEST}/share/dbus-1/services",
         "install -Dm644 data/metainfo/io.frama.tractor.carburetor.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo",
         "install -Dm644 data/icons/scalable/apps/io.frama.tractor.carburetor.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps",
         "install -Dm644 data/icons/symbolic/apps/io.frama.tractor.carburetor-symbolic.svg -t ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps",
@@ -166,7 +167,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/carburetor.git",
-          "tag": "4.5.1",
+	  "commit": "9b782a31",
           "x-checker-data": [
             {
               "type": "git",
@@ -174,10 +175,6 @@
               "is-main-source": true
             }
           ]
-        },
-        {
-          "type": "patch",
-          "path": "appstream_update.patch"
         }
       ]
     }
