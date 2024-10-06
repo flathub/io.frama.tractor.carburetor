@@ -65,7 +65,7 @@
             {
               "type": "html",
               "url": "https://libevent.org/",
-              "pattern": "<link>(https://github.com/libevent/libevent/releases/download/release-([\d\.]+)-stable/libevent-([\d\.]+)-stable.tar.gz)</link>",
+              "pattern": "<link>(https://github.com/libevent/libevent/releases/download/release-([d.]+)-stable/libevent-([d.]+)-stable.tar.gz)</link>",
               "sort-matches": false
             }
           ]
@@ -90,7 +90,7 @@
             {
               "type": "html",
               "url": "https://www.torproject.org/download/tor/",
-              "version-pattern": "<td>([\d\.]+)</td>",
+              "version-pattern": "<td>([d.]+)</td>",
               "url-template": "https://dist.torproject.org/tor-$version.tar.gz"
             }
           ]
@@ -141,7 +141,7 @@
           "x-checker-data": [
             {
               "type": "git",
-              "tag-pattern": "^([\d\.]+)$"
+              "tag-pattern": "^([d.]+)$"
             }
           ]
         },
@@ -170,7 +170,7 @@
           "x-checker-data": [
             {
               "type": "git",
-              "tag-pattern": "^([\d\.]+)$",
+              "tag-pattern": "^([d.]+)$",
               "is-main-source": true
             }
           ]
