@@ -13,10 +13,10 @@
   type: archive
   url: https://proxy.golang.org/github.com/dchest/siphash/@v/v1.2.3.zip
 - dest: vendor/github.com/refraction-networking/utls
-  sha256: c2ed2e2d31cf0506b7542928e15f26cd5b00213a42c204a8e956282ab789bf2d
+  sha256: 57d69c8ac0a4f4b7d961adfadb06da5445db39233fbf535c1e789f2a8b6da72b
   strip-components: 3
   type: archive
-  url: https://proxy.golang.org/github.com/refraction-networking/utls/@v/v1.6.3.zip
+  url: https://proxy.golang.org/github.com/refraction-networking/utls/@v/v1.6.7.zip
 - dest: vendor/gitlab.com/yawning/edwards25519-extra
   sha256: 528dd6210d52f89efdc3e397a5caac14a4f9b44db8d4b29cb06106c280c16a95
   strip-components: 3
@@ -27,16 +27,21 @@
   strip-components: 5
   type: archive
   url: https://proxy.golang.org/gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/goptlib/@v/v1.5.0.zip
+- dest: vendor/gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel
+  sha256: c8fe061206b5ea66850c85201715444b4ce0deb9e345be49d273ea18c7299b9a
+  strip-components: 5
+  type: archive
+  url: https://proxy.golang.org/gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/@v/v0.0.0-20240711104640-e64b1b3562f3.zip
 - dest: vendor/golang.org/x/crypto
-  sha256: 689d6b9313d406e061863b9b84eb43b02b7fbe081a49bb25097bfb192f1b90e0
+  sha256: 959acbe3514430c2c009dc93f27e41ddad4fee178a4c680c753bc09b5d2e77d0
   strip-components: 3
   type: archive
-  url: https://proxy.golang.org/golang.org/x/crypto/@v/v0.21.0.zip
+  url: https://proxy.golang.org/golang.org/x/crypto/@v/v0.28.0.zip
 - dest: vendor/golang.org/x/net
-  sha256: 2f624e504f4cd569e907a9449d349f1c4e3652623fb9e352e81d2155ecc2c133
+  sha256: c357b779cdc08d0952f7bad4c45ce84223b7c6005d775822a17901ae8f65bbba
   strip-components: 3
   type: archive
-  url: https://proxy.golang.org/golang.org/x/net/@v/v0.22.0.zip
+  url: https://proxy.golang.org/golang.org/x/net/@v/v0.30.0.zip
 - dest: vendor/github.com/andybalholm/brotli
   sha256: 7406a3da42b69d91795fa3cbdbda47b4609352e1a292d5cf890ed6e7a05ab690
   strip-components: 3
@@ -52,23 +57,13 @@
   strip-components: 3
   type: archive
   url: https://proxy.golang.org/github.com/klauspost/compress/@v/v1.17.4.zip
-- dest: vendor/github.com/quic-go/quic-go
-  sha256: 285c4726d88352be8ba54c8b038636d28fae433a8929b5a6da77f04b9f0c888f
-  strip-components: 3
-  type: archive
-  url: https://proxy.golang.org/github.com/quic-go/quic-go/@v/v0.40.1.zip
-- dest: vendor/gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel
-  sha256: dbe1ca93cb38ab157df81a762b9a2d4b8cd110654cae110f99f1e414df1fb06b
-  strip-components: 5
-  type: archive
-  url: https://proxy.golang.org/gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/@v/v0.0.0-20240220175603-399c24557a18.zip
 - dest: vendor/golang.org/x/sys
-  sha256: 96e3b16b15a7d193c9db2974db4cabed29b37ab4bb09f63edfa441199de6fdf8
+  sha256: f44842acff792af010dcb5a24308b72272ebd57c74e00d5f530c9e5d55b86979
   strip-components: 3
   type: archive
-  url: https://proxy.golang.org/golang.org/x/sys/@v/v0.18.0.zip
+  url: https://proxy.golang.org/golang.org/x/sys/@v/v0.26.0.zip
 - dest: vendor/golang.org/x/text
-  sha256: b9814897e0e09cd576a7a013f066c7db537a3d538d2e0f60f0caee9bc1b3f4af
+  sha256: 37f9f40b6c3c56e079684d612439b61ce4e891c3cea32298fbab53a1cac47c35
   strip-components: 3
   type: archive
-  url: https://proxy.golang.org/golang.org/x/text/@v/v0.14.0.zip
+  url: https://proxy.golang.org/golang.org/x/text/@v/v0.19.0.zip

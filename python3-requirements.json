@@ -17,8 +17,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl",
-                    "sha256": "9297c0df9c99445c2412e832e882a7884038a25617c60cea2ad69488d4040d63"
+                    "url": "https://files.pythonhosted.org/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl",
+                    "sha256": "37b17b5fc1e604945c2642c872a3764b5d547a48009871aea3edd3afa180afb8"
                 }
             ]
         },

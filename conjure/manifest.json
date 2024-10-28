@@ -1,0 +1,23 @@
+{
+  "name": "conjure",
+  "buildsystem": "simple",
+  "build-options": {
+    "append-path": "/usr/lib/sdk/golang/bin",
+    "env": {
+      "GOBIN": "/app/bin",
+      "GOROOT": "/usr/lib/sdk/golang"
+    }
+  },
+  "build-commands": [
+    "cd client && go build -mod=vendor -o conjure-client",
+    "install -Dm755 client/conjure-client -t ${FLATPAK_DEST}/conjure/pts"
+  ],
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/conjure.git",
+      "commit": "67da78f9"
+    },
+    "go.mod.yml"
+  ]
+}

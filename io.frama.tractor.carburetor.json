@@ -1,5 +1,5 @@
 {
-  "app-id": "io.frama.tractor.carburetor",
+  "id": "io.frama.tractor.carburetor",
   "runtime": "org.gnome.Platform",
   "runtime-version": "47",
   "sdk": "org.gnome.Sdk",
@@ -27,6 +27,13 @@
       "merge-dirs": "pts",
       "no-autodownload": false,
       "autodelete": true
+    },
+    "io.frama.tractor.carburetor.pt.conjure": {
+      "directory": "conjure",
+      "bundle": true,
+      "merge-dirs": "pts",
+      "no-autodownload": false,
+      "autodelete": true
     }
   },
   "finish-args": [
@@ -48,12 +55,18 @@
     "/include",
     "/lib/pkgconfig",
     "/libexec",
+    "/man",
+    "/share/doc",
+    "/share/gtk-doc",
+    "/share/man",
+    "/share/pkgconfig",
     "/share/dbus-1/services/ca.desrt.dconf.service"
   ],
   "modules": [
     "python3-requirements.json",
     "lyrebird/manifest.json",
     "snowflake/manifest.json",
+    "conjure/manifest.json",
     {
       "name": "libevent",
       "sources": [
@@ -137,7 +150,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/tractor.git",
-	  "commit": "70063108",
+          "commit": "3119533",
           "x-checker-data": [
             {
               "type": "git",
@@ -153,21 +166,13 @@
     },
     {
       "name": "carburetor",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} . --no-build-isolation",
-        "install -Dm644 data/applications/io.frama.tractor.carburetor.desktop -t ${FLATPAK_DEST}/share/applications",
-        "install -Dm644 data/dbus-1/services/io.frama.tractor.carburetor.service -t ${FLATPAK_DEST}/share/dbus-1/services",
-        "install -Dm644 data/metainfo/io.frama.tractor.carburetor.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo",
-        "install -Dm644 data/icons/scalable/apps/io.frama.tractor.carburetor.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps",
-        "install -Dm644 data/icons/symbolic/apps/io.frama.tractor.carburetor-symbolic.svg -t ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps",
-        "mkdir ${FLATPAK_DEST}/pts"
-      ],
+      "builddir": true,
+      "buildsystem": "meson",
       "sources": [
         {
           "type": "git",
           "url": "https://framagit.org/tractor/carburetor.git",
-	  "commit": "9b782a31",
+          "commit": "9cdb0bc0",
           "x-checker-data": [
             {
               "type": "git",
@@ -176,6 +181,9 @@
             }
           ]
         }
+      ],
+      "post-install": [
+        "mkdir -p ${FLATPAK_DEST}/pts"
       ]
     }
   ]

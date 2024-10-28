@@ -1,6 +1,6 @@
-From 5f2f2689393fb06780bce6a499c5c1f819f445c7 Mon Sep 17 00:00:00 2001
+From 975e49b9cad0f1c2dd9b1de8a72a0620dfe680fd Mon Sep 17 00:00:00 2001
 From: Danial Behzadi <dani.behzi@ubuntu.com>
-Date: Wed, 7 Aug 2024 17:27:12 +0330
+Date: Tue, 1 Oct 2024 18:09:52 +0330
 Subject: [PATCH] Change path for pluggable transports in Flatpak version.
 
 ---
@@ -8,18 +8,18 @@ Subject: [PATCH] Change path for pluggable transports in Flatpak version.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/src/tractor/tractor.gschema.xml b/src/tractor/tractor.gschema.xml
-index bf45372..5b7d0ce 100644
+index 1d31c80..ef1a8f7 100644
 --- a/src/tractor/tractor.gschema.xml
 +++ b/src/tractor/tractor.gschema.xml
-@@ -42,7 +42,7 @@
-             <description>Whether or not allowing external devices to use this network</description>
-         </key>
-         <key type="(sssss)" name="plugable-transport">
--            <default>("", "", "/usr/bin/obfs4proxy", "/usr/bin/snowflake-client", "/usr/bin/webtunnel-client")</default>
-+            <default>("", "", "/app/pts/obfs4proxy", "/app/pts/snowflake-client", "/app/pts/webtunnel-client")</default>
-             <summary>Plugable Transport Files</summary>
-             <description>path of executables for (none, vanilla, obfs, snowflake, webtunnel)</description>
-         </key>
+@@ -48,7 +48,7 @@
+       <description>Whether or not allowing external devices to use this network</description>
+     </key>
+     <key type="(sssss)" name="pluggable-transport">
+-      <default>("", "", "/usr/bin/obfs4proxy", "/usr/bin/snowflake-client", "/usr/bin/conjure-client")</default>
++      <default>("", "", "/app/pts/obfs4proxy", "/app/pts/snowflake-client", "/app/pts/conjure-client")</default>
+       <summary>Pluggable Transport Files</summary>
+       <description>path of executables for (none, vanilla, obfs, snowflake, webtunnel)</description>
+     </key>
 -- 
-2.39.2
+2.39.5
 
