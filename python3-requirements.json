@@ -17,8 +17,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl",
-                    "sha256": "9297c0df9c99445c2412e832e882a7884038a25617c60cea2ad69488d4040d63"
+                    "url": "https://files.pythonhosted.org/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl",
+                    "sha256": "37b17b5fc1e604945c2642c872a3764b5d547a48009871aea3edd3afa180afb8"
                 }
             ]
         },
@@ -33,6 +33,20 @@
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/8d/59/b4572118e098ac8e46e399a1dd0f2d85403ce8bbaad9ec79373ed6badaf9/PySocks-1.7.1-py3-none-any.whl",
                     "sha256": "2725bd0a9925919b9b51739eea5f9e2bae91e83288108a9ad338b2e3a4435ee5"
+                }
+            ]
+        },
+        {
+            "name": "python3-pycountry",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pycountry\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/b1/ec/1fb891d8a2660716aadb2143235481d15ed1cbfe3ad669194690b0604492/pycountry-24.6.1-py3-none-any.whl",
+                    "sha256": "f1a4fb391cd7214f8eefd39556d740adcc233c778a27f8942c8dca351d6ce06f"
                 }
             ]
         },
