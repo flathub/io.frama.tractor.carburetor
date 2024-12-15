@@ -180,6 +180,10 @@
               "is-main-source": true
             }
           ]
+        },
+        {
+          "type": "patch",
+          "path": "pycountry.patch"
         }
       ],
       "post-install": [

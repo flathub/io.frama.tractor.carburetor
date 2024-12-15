@@ -1,0 +1,51 @@
+From f75d41db12f61363eee1097d2c1f63993a6d645c Mon Sep 17 00:00:00 2001
+From: Danial Behzadi <dani.behzi@ubuntu.com>
+Date: Sun, 15 Dec 2024 21:31:38 +0330
+Subject: [PATCH] patch pycountry.
+
+---
+ src/config.py | 28 +++++++++++++++++++---------
+ 1 file changed, 19 insertions(+), 9 deletions(-)
+
+diff --git a/src/config.py b/src/config.py
+index d64f44d..9936ce5 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -13,15 +13,25 @@ import pycountry
+ from gi.repository import Gio
+ 
+ 
+-# Get the user's locale
+-language = os.environ.get("LANG", "en_US.UTF-8").split(".")[0]
+-countries_l10n = gettext.translation(
+-    "iso3166-1", pycountry.LOCALES_DIR, [language]
+-)
++countries = [
++    pycountry.countries.get(alpha_2=code)
++    for code in ("ca", "ch", "de", "es", "gb", "it", "fr", "nl", "se", "us")
++]
++
++try:
++    language = os.environ.get("LANG", "en_US.UTF-8").split(".")[0]
++    countries_l10n = gettext.translation(
++        "iso3166-1", pycountry.LOCALES_DIR, [language]
++    )
++    NODES = {
++        country: f"{countries_l10n.gettext(country.name)} {country.flag}"
++        for country in countries
++    }
++# If pycountry does not provide country translations for the language
++except FileNotFoundError:
++    NODES = {
++        country: f"{country.name} {country.flag}" for country in countries
++    }
+ 
+ COMMAND = "tractor"
+ DCONF = Gio.Settings.new("org.tractor")
+-NODES = {}
+-for code in ("ca", "ch", "de", "es", "gb", "it", "fr", "nl", "se", "us"):
+-    country = pycountry.countries.get(alpha_2=code)
+-    NODES[code] = countries_l10n.gettext(country.name) + " " + country.flag
+-- 
+2.45.2
+
