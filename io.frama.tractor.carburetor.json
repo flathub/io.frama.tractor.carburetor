@@ -150,7 +150,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/tractor.git",
-          "commit": "c34595bb",
+          "tag": "5.0.0",
           "x-checker-data": [
             {
               "type": "git",
@@ -172,7 +172,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/carburetor.git",
-          "commit": "4acd19ad",
+          "commit": "2c304231",
           "x-checker-data": [
             {
               "type": "git",
