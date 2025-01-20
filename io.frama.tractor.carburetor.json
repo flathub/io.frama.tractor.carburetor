@@ -184,6 +184,10 @@
         {
           "type": "patch",
           "path": "pycountry.patch"
+        },
+        {
+          "type": "patch",
+          "path": "controls.patch"
         }
       ],
       "post-install": [
