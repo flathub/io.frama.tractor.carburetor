@@ -1,7 +1,7 @@
 {
   "id": "io.frama.tractor.carburetor",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "47",
+  "runtime-version": "48",
   "sdk": "org.gnome.Sdk",
   "command": "carburetor",
   "sdk-extensions": [
@@ -97,8 +97,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dist.torproject.org/tor-0.4.8.12.tar.gz",
-          "sha256": "ca7cc735d98e3747b58f2f3cc14f804dd789fa0fb333a84dcb6bd70adbb8c874",
+          "url": "https://dist.torproject.org/tor-0.4.8.16.tar.gz",
+          "sha256": "6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb",
           "x-checker-data": [
             {
               "type": "html",
@@ -150,7 +150,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/tractor.git",
-          "tag": "5.0.0",
+          "tag": "5.1.0",
           "x-checker-data": [
             {
               "type": "git",
@@ -172,7 +172,7 @@
         {
           "type": "git",
           "url": "https://framagit.org/tractor/carburetor.git",
-          "commit": "2c304231",
+          "tag": "5.1.1",
           "x-checker-data": [
             {
               "type": "git",
