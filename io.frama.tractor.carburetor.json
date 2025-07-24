@@ -97,8 +97,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dist.torproject.org/tor-0.4.8.16.tar.gz",
-          "sha256": "6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb",
+          "url": "https://dist.torproject.org/tor-0.4.8.17.tar.gz",
+          "sha256": "79b4725e1d4b887b9e68fd09b0d2243777d5ce3cd471e538583bcf6f9d8cdb56",
           "x-checker-data": [
             {
               "type": "html",
