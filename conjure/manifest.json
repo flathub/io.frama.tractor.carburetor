@@ -16,7 +16,7 @@
     {
       "type": "git",
       "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/conjure.git",
-      "commit": "67da78f9"
+      "commit": "14e660f"
     },
     "go.mod.yml"
   ]
