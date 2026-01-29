@@ -6,7 +6,7 @@ filippo.io/edwards25519/field
 ## explicit; go 1.13
 github.com/andybalholm/brotli
 github.com/andybalholm/brotli/matchfinder
-# github.com/aws/aws-sdk-go-v2 v1.32.8
+# github.com/aws/aws-sdk-go-v2 v1.36.1
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/aws
 github.com/aws/aws-sdk-go-v2/aws/defaults
@@ -32,10 +32,10 @@ github.com/aws/aws-sdk-go-v2/internal/shareddefaults
 github.com/aws/aws-sdk-go-v2/internal/strings
 github.com/aws/aws-sdk-go-v2/internal/sync/singleflight
 github.com/aws/aws-sdk-go-v2/internal/timeconv
-# github.com/aws/aws-sdk-go-v2/config v1.28.10
+# github.com/aws/aws-sdk-go-v2/config v1.29.6
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/config
-# github.com/aws/aws-sdk-go-v2/credentials v1.17.51
+# github.com/aws/aws-sdk-go-v2/credentials v1.17.59
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/credentials
 github.com/aws/aws-sdk-go-v2/credentials/ec2rolecreds
@@ -44,46 +44,46 @@ github.com/aws/aws-sdk-go-v2/credentials/endpointcreds/internal/client
 github.com/aws/aws-sdk-go-v2/credentials/processcreds
 github.com/aws/aws-sdk-go-v2/credentials/ssocreds
 github.com/aws/aws-sdk-go-v2/credentials/stscreds
-# github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.23
+# github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.28
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/feature/ec2/imds
 github.com/aws/aws-sdk-go-v2/feature/ec2/imds/internal/config
-# github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.27
+# github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.32
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/internal/configsources
-# github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.27
+# github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.32
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/internal/endpoints/v2
-# github.com/aws/aws-sdk-go-v2/internal/ini v1.8.1
+# github.com/aws/aws-sdk-go-v2/internal/ini v1.8.2
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/internal/ini
-# github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.1
+# github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.2
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding
-# github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.8
+# github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.13
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/service/internal/presigned-url
-# github.com/aws/aws-sdk-go-v2/service/sqs v1.37.6
+# github.com/aws/aws-sdk-go-v2/service/sqs v1.37.14
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/service/sqs
 github.com/aws/aws-sdk-go-v2/service/sqs/internal/endpoints
 github.com/aws/aws-sdk-go-v2/service/sqs/types
-# github.com/aws/aws-sdk-go-v2/service/sso v1.24.9
+# github.com/aws/aws-sdk-go-v2/service/sso v1.24.15
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/service/sso
 github.com/aws/aws-sdk-go-v2/service/sso/internal/endpoints
 github.com/aws/aws-sdk-go-v2/service/sso/types
-# github.com/aws/aws-sdk-go-v2/service/ssooidc v1.28.8
+# github.com/aws/aws-sdk-go-v2/service/ssooidc v1.28.14
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/service/ssooidc
 github.com/aws/aws-sdk-go-v2/service/ssooidc/internal/endpoints
 github.com/aws/aws-sdk-go-v2/service/ssooidc/types
-# github.com/aws/aws-sdk-go-v2/service/sts v1.33.6
+# github.com/aws/aws-sdk-go-v2/service/sts v1.33.14
 ## explicit; go 1.21
 github.com/aws/aws-sdk-go-v2/service/sts
 github.com/aws/aws-sdk-go-v2/service/sts/internal/endpoints
 github.com/aws/aws-sdk-go-v2/service/sts/types
-# github.com/aws/smithy-go v1.22.1
+# github.com/aws/smithy-go v1.22.2
 ## explicit; go 1.21
 github.com/aws/smithy-go
 github.com/aws/smithy-go/auth
@@ -158,9 +158,6 @@ github.com/cloudflare/circl/sign/schemes
 github.com/cloudflare/circl/simd/keccakf1600
 github.com/cloudflare/circl/xof
 github.com/cloudflare/circl/xof/k12
-# github.com/davecgh/go-spew v1.1.1
-## explicit
-github.com/davecgh/go-spew/spew
 # github.com/dchest/siphash v1.2.3
 ## explicit; go 1.16
 github.com/dchest/siphash
@@ -185,7 +182,7 @@ github.com/klauspost/cpuid/v2
 # github.com/klauspost/reedsolomon v1.12.4
 ## explicit; go 1.21
 github.com/klauspost/reedsolomon
-# github.com/miekg/dns v1.1.62
+# github.com/miekg/dns v1.1.63
 ## explicit; go 1.19
 github.com/miekg/dns
 # github.com/patrickmn/go-cache v2.1.0+incompatible
@@ -194,27 +191,6 @@ github.com/patrickmn/go-cache
 # github.com/pion/datachannel v1.5.10
 ## explicit; go 1.20
 github.com/pion/datachannel
-# github.com/pion/dtls/v2 v2.2.12
-## explicit; go 1.13
-github.com/pion/dtls/v2
-github.com/pion/dtls/v2/internal/ciphersuite
-github.com/pion/dtls/v2/internal/ciphersuite/types
-github.com/pion/dtls/v2/internal/closer
-github.com/pion/dtls/v2/internal/util
-github.com/pion/dtls/v2/pkg/crypto/ccm
-github.com/pion/dtls/v2/pkg/crypto/ciphersuite
-github.com/pion/dtls/v2/pkg/crypto/clientcertificate
-github.com/pion/dtls/v2/pkg/crypto/elliptic
-github.com/pion/dtls/v2/pkg/crypto/fingerprint
-github.com/pion/dtls/v2/pkg/crypto/hash
-github.com/pion/dtls/v2/pkg/crypto/prf
-github.com/pion/dtls/v2/pkg/crypto/signature
-github.com/pion/dtls/v2/pkg/crypto/signaturehash
-github.com/pion/dtls/v2/pkg/protocol
-github.com/pion/dtls/v2/pkg/protocol/alert
-github.com/pion/dtls/v2/pkg/protocol/extension
-github.com/pion/dtls/v2/pkg/protocol/handshake
-github.com/pion/dtls/v2/pkg/protocol/recordlayer
 # github.com/pion/dtls/v3 v3.0.4
 ## explicit; go 1.20
 github.com/pion/dtls/v3
@@ -228,6 +204,7 @@ github.com/pion/dtls/v3/pkg/crypto/ccm
 github.com/pion/dtls/v3/pkg/crypto/ciphersuite
 github.com/pion/dtls/v3/pkg/crypto/clientcertificate
 github.com/pion/dtls/v3/pkg/crypto/elliptic
+github.com/pion/dtls/v3/pkg/crypto/fingerprint
 github.com/pion/dtls/v3/pkg/crypto/hash
 github.com/pion/dtls/v3/pkg/crypto/prf
 github.com/pion/dtls/v3/pkg/crypto/signature
@@ -238,12 +215,13 @@ github.com/pion/dtls/v3/pkg/protocol/alert
 github.com/pion/dtls/v3/pkg/protocol/extension
 github.com/pion/dtls/v3/pkg/protocol/handshake
 github.com/pion/dtls/v3/pkg/protocol/recordlayer
-# github.com/pion/ice/v2 v2.3.37
-## explicit; go 1.13
-github.com/pion/ice/v2
-github.com/pion/ice/v2/internal/atomic
-github.com/pion/ice/v2/internal/fakenet
-github.com/pion/ice/v2/internal/stun
+# github.com/pion/ice/v4 v4.0.7
+## explicit; go 1.20
+github.com/pion/ice/v4
+github.com/pion/ice/v4/internal/atomic
+github.com/pion/ice/v4/internal/fakenet
+github.com/pion/ice/v4/internal/stun
+github.com/pion/ice/v4/internal/taskloop
 # github.com/pion/interceptor v0.1.37
 ## explicit; go 1.20
 github.com/pion/interceptor
@@ -251,87 +229,72 @@ github.com/pion/interceptor/internal/ntp
 github.com/pion/interceptor/internal/sequencenumber
 github.com/pion/interceptor/pkg/nack
 github.com/pion/interceptor/pkg/report
+github.com/pion/interceptor/pkg/rfc8888
 github.com/pion/interceptor/pkg/twcc
-# github.com/pion/logging v0.2.2
-## explicit; go 1.12
+# github.com/pion/logging v0.2.3
+## explicit; go 1.20
 github.com/pion/logging
-# github.com/pion/mdns v0.0.12
+# github.com/pion/mdns/v2 v2.0.7
 ## explicit; go 1.19
-github.com/pion/mdns
+github.com/pion/mdns/v2
 # github.com/pion/randutil v0.1.0
 ## explicit; go 1.14
 github.com/pion/randutil
 # github.com/pion/rtcp v1.2.15
 ## explicit; go 1.20
 github.com/pion/rtcp
-# github.com/pion/rtp v1.8.10
+# github.com/pion/rtp v1.8.12
 ## explicit; go 1.20
 github.com/pion/rtp
 github.com/pion/rtp/codecs
 github.com/pion/rtp/codecs/av1/obu
 github.com/pion/rtp/codecs/vp9
-# github.com/pion/sctp v1.8.35
+# github.com/pion/sctp v1.8.37
 ## explicit; go 1.20
 github.com/pion/sctp
-# github.com/pion/sdp/v3 v3.0.10
+# github.com/pion/sdp/v3 v3.0.11
 ## explicit; go 1.20
 github.com/pion/sdp/v3
-# github.com/pion/srtp/v2 v2.0.20
-## explicit; go 1.14
-github.com/pion/srtp/v2
-# github.com/pion/stun v0.6.1
-## explicit; go 1.12
-github.com/pion/stun
-github.com/pion/stun/internal/hmac
+# github.com/pion/srtp/v3 v3.0.4
+## explicit; go 1.20
+github.com/pion/srtp/v3
 # github.com/pion/stun/v3 v3.0.0
 ## explicit; go 1.19
 github.com/pion/stun/v3
 github.com/pion/stun/v3/internal/hmac
-# github.com/pion/transport/v2 v2.2.10
-## explicit; go 1.12
-github.com/pion/transport/v2
-github.com/pion/transport/v2/connctx
-github.com/pion/transport/v2/deadline
-github.com/pion/transport/v2/packetio
-github.com/pion/transport/v2/replaydetector
-github.com/pion/transport/v2/stdnet
-github.com/pion/transport/v2/udp
-github.com/pion/transport/v2/utils/xor
-github.com/pion/transport/v2/vnet
 # github.com/pion/transport/v3 v3.0.7
 ## explicit; go 1.19
 github.com/pion/transport/v3
 github.com/pion/transport/v3/deadline
 github.com/pion/transport/v3/netctx
+github.com/pion/transport/v3/packetio
 github.com/pion/transport/v3/replaydetector
 github.com/pion/transport/v3/stdnet
 github.com/pion/transport/v3/utils/xor
-# github.com/pion/turn/v2 v2.1.6
-## explicit; go 1.13
-github.com/pion/turn/v2
-github.com/pion/turn/v2/internal/allocation
-github.com/pion/turn/v2/internal/client
-github.com/pion/turn/v2/internal/ipnet
-github.com/pion/turn/v2/internal/proto
-github.com/pion/turn/v2/internal/server
-# github.com/pion/webrtc/v3 v3.3.5
-## explicit; go 1.17
-github.com/pion/webrtc/v3
-github.com/pion/webrtc/v3/internal/fmtp
-github.com/pion/webrtc/v3/internal/mux
-github.com/pion/webrtc/v3/internal/util
-github.com/pion/webrtc/v3/pkg/media
-github.com/pion/webrtc/v3/pkg/rtcerr
+github.com/pion/transport/v3/vnet
+# github.com/pion/turn/v4 v4.0.0
+## explicit; go 1.19
+github.com/pion/turn/v4
+github.com/pion/turn/v4/internal/allocation
+github.com/pion/turn/v4/internal/client
+github.com/pion/turn/v4/internal/ipnet
+github.com/pion/turn/v4/internal/proto
+github.com/pion/turn/v4/internal/server
+# github.com/pion/webrtc/v4 v4.0.13
+## explicit; go 1.20
+github.com/pion/webrtc/v4
+github.com/pion/webrtc/v4/internal/fmtp
+github.com/pion/webrtc/v4/internal/mux
+github.com/pion/webrtc/v4/internal/util
+github.com/pion/webrtc/v4/pkg/media
+github.com/pion/webrtc/v4/pkg/rtcerr
 # github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors
-# github.com/pmezard/go-difflib v1.0.0
-## explicit
-github.com/pmezard/go-difflib/difflib
 # github.com/realclientip/realclientip-go v1.0.0
 ## explicit; go 1.13
 github.com/realclientip/realclientip-go
-# github.com/refraction-networking/utls v1.6.7 => gitlab.torproject.org/shelikhoo/utls-temporary v0.0.0-20250428152032-7f32539913c8
+# github.com/refraction-networking/utls v1.6.7 => gitlab.torproject.org/shelikhoo/utls-temporary v0.0.0-20260114141111-0f042ad603ef
 ## explicit; go 1.21
 github.com/refraction-networking/utls
 github.com/refraction-networking/utls/dicttls
@@ -339,11 +302,6 @@ github.com/refraction-networking/utls/internal/boring
 github.com/refraction-networking/utls/internal/helper
 github.com/refraction-networking/utls/internal/quicvarint
 github.com/refraction-networking/utls/internal/quicvarint/protocol
-# github.com/stretchr/testify v1.10.0
-## explicit; go 1.17
-github.com/stretchr/testify/assert
-github.com/stretchr/testify/assert/yaml
-github.com/stretchr/testify/require
 # github.com/templexxx/cpu v0.1.1
 ## explicit
 github.com/templexxx/cpu
@@ -365,7 +323,7 @@ github.com/wlynxg/anet
 # github.com/xtaci/kcp-go/v5 v5.6.18
 ## explicit; go 1.21
 github.com/xtaci/kcp-go/v5
-# github.com/xtaci/smux v1.5.33
+# github.com/xtaci/smux v1.5.34
 ## explicit; go 1.13
 github.com/xtaci/smux
 # gitlab.com/yawning/edwards25519-extra v0.0.0-20231005122941-2149dcafc266
@@ -375,10 +333,11 @@ gitlab.com/yawning/edwards25519-extra/internal/montgomery
 # gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/goptlib v1.6.0
 ## explicit; go 1.11
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/goptlib
-# gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/ptutil v0.0.0-20240710081135-6c4d8ed41027
+# gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/ptutil v0.0.0-20250130151315-efaf4e0ec0d3
 ## explicit; go 1.21
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/ptutil/safelog
-# gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2 v2.10.1
+gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/ptutil/utls
+# gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2 v2.11.0
 ## explicit; go 1.21
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/client/lib
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/common/amp
@@ -393,10 +352,10 @@ gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/comm
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/common/sqscreds/lib
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/common/turbotunnel
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/common/util
-gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/common/utls
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/v2/common/version
-# gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel v0.0.2
+# gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel v0.0.3-0.20250724131018-aab00213ba56
 ## explicit; go 1.18
+gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/common/certiChainHashCalc
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/transport/httpupgrade
 gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/transport/tls
 # golang.org/x/crypto v0.33.0
@@ -474,6 +433,3 @@ golang.org/x/tools/internal/stdlib
 golang.org/x/tools/internal/typeparams
 golang.org/x/tools/internal/typesinternal
 golang.org/x/tools/internal/versions
-# gopkg.in/yaml.v3 v3.0.1
-## explicit
-gopkg.in/yaml.v3
