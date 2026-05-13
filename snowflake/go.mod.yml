@@ -78,10 +78,10 @@
   type: archive
   url: https://proxy.golang.org/github.com/realclientip/realclientip-go/@v/v1.0.0.zip
 - dest: vendor/github.com/refraction-networking/utls
-  sha256: cefa658720110a9945017cfc73d976dca952100693da8014356bb8fa61c1aca4
+  sha256: c5377f68cd4ba8d410a4d7c9bd45bec60fb493e2f09d0728a4f76db9f38c059d
   strip-components: 3
   type: archive
-  url: https://proxy.golang.org/gitlab.torproject.org/shelikhoo/utls-temporary/@v/v0.0.0-20260114141111-0f042ad603ef.zip
+  url: https://proxy.golang.org/github.com/refraction-networking/utls/@v/v1.8.2.zip
 - dest: vendor/github.com/smartystreets/goconvey
   sha256: 386d6cbaf30c8d7fd4daad50639408e80cb78cb994eb76aafc9f9b8cb18689e7
   strip-components: 3
@@ -212,11 +212,6 @@
   strip-components: 4
   type: archive
   url: https://proxy.golang.org/github.com/cespare/xxhash/v2/@v/v2.3.0.zip
-- dest: vendor/github.com/cloudflare/circl
-  sha256: 4497093cb7544d30e9d5d741a5e62c14fb8989c4271ca0a9a0a03a73570b3b83
-  strip-components: 3
-  type: archive
-  url: https://proxy.golang.org/github.com/cloudflare/circl/@v/v1.3.7.zip
 - dest: vendor/github.com/davecgh/go-spew
   sha256: 6b44a843951f371b7010c754ecc3cabefe815d5ced1c5b9409fb2d697e8a890d
   strip-components: 3

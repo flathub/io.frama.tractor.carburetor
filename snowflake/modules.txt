@@ -117,48 +117,6 @@ github.com/cespare/xxhash/v2
 # github.com/clarkduvall/hyperloglog v0.0.0-20171127014514-a0107a5d8004
 ## explicit
 github.com/clarkduvall/hyperloglog
-# github.com/cloudflare/circl v1.3.7
-## explicit; go 1.19
-github.com/cloudflare/circl/dh/x25519
-github.com/cloudflare/circl/dh/x448
-github.com/cloudflare/circl/ecc/goldilocks
-github.com/cloudflare/circl/ecc/p384
-github.com/cloudflare/circl/hpke
-github.com/cloudflare/circl/internal/conv
-github.com/cloudflare/circl/internal/sha3
-github.com/cloudflare/circl/kem
-github.com/cloudflare/circl/kem/hybrid
-github.com/cloudflare/circl/kem/kyber/kyber1024
-github.com/cloudflare/circl/kem/kyber/kyber512
-github.com/cloudflare/circl/kem/kyber/kyber768
-github.com/cloudflare/circl/math
-github.com/cloudflare/circl/math/fp25519
-github.com/cloudflare/circl/math/fp448
-github.com/cloudflare/circl/math/mlsbset
-github.com/cloudflare/circl/pke/kyber/internal/common
-github.com/cloudflare/circl/pke/kyber/internal/common/params
-github.com/cloudflare/circl/pke/kyber/kyber1024
-github.com/cloudflare/circl/pke/kyber/kyber1024/internal
-github.com/cloudflare/circl/pke/kyber/kyber512
-github.com/cloudflare/circl/pke/kyber/kyber512/internal
-github.com/cloudflare/circl/pke/kyber/kyber768
-github.com/cloudflare/circl/pke/kyber/kyber768/internal
-github.com/cloudflare/circl/pki
-github.com/cloudflare/circl/sign
-github.com/cloudflare/circl/sign/dilithium/internal/common
-github.com/cloudflare/circl/sign/dilithium/internal/common/params
-github.com/cloudflare/circl/sign/dilithium/mode2
-github.com/cloudflare/circl/sign/dilithium/mode2/internal
-github.com/cloudflare/circl/sign/dilithium/mode3
-github.com/cloudflare/circl/sign/dilithium/mode3/internal
-github.com/cloudflare/circl/sign/ed25519
-github.com/cloudflare/circl/sign/ed448
-github.com/cloudflare/circl/sign/eddilithium2
-github.com/cloudflare/circl/sign/eddilithium3
-github.com/cloudflare/circl/sign/schemes
-github.com/cloudflare/circl/simd/keccakf1600
-github.com/cloudflare/circl/xof
-github.com/cloudflare/circl/xof/k12
 # github.com/davecgh/go-spew v1.1.1
 ## explicit
 github.com/davecgh/go-spew/spew
@@ -335,14 +293,20 @@ github.com/prometheus/procfs/internal/util
 # github.com/realclientip/realclientip-go v1.0.0
 ## explicit; go 1.13
 github.com/realclientip/realclientip-go
-# github.com/refraction-networking/utls v1.6.7 => gitlab.torproject.org/shelikhoo/utls-temporary v0.0.0-20260114141111-0f042ad603ef
-## explicit; go 1.21
+# github.com/refraction-networking/utls v1.8.2
+## explicit; go 1.24
 github.com/refraction-networking/utls
 github.com/refraction-networking/utls/dicttls
 github.com/refraction-networking/utls/internal/boring
+github.com/refraction-networking/utls/internal/byteorder
+github.com/refraction-networking/utls/internal/fips140tls
 github.com/refraction-networking/utls/internal/helper
+github.com/refraction-networking/utls/internal/hkdf
+github.com/refraction-networking/utls/internal/hpke
 github.com/refraction-networking/utls/internal/quicvarint
 github.com/refraction-networking/utls/internal/quicvarint/protocol
+github.com/refraction-networking/utls/internal/tls12
+github.com/refraction-networking/utls/internal/tls13
 # github.com/smarty/assertions v1.15.0
 ## explicit; go 1.18
 github.com/smarty/assertions
@@ -400,8 +364,6 @@ go.yaml.in/yaml/v2
 ## explicit; go 1.23.0
 golang.org/x/crypto/acme
 golang.org/x/crypto/acme/autocert
-golang.org/x/crypto/blake2b
-golang.org/x/crypto/blake2s
 golang.org/x/crypto/blowfish
 golang.org/x/crypto/cast5
 golang.org/x/crypto/chacha20
