@@ -1,5 +1,5 @@
-# Carburetor flatpak recepie
-This is the recepie for packaging [carburetor](https://tractor.frama.io/carburetor) as flatpak.
+# Carburetor flatpak recipe
+This is the recipe for packaging [carburetor](https://tractor.frama.io/carburetor) as flatpak.
 
 ## Update dependencies
 ### Python
