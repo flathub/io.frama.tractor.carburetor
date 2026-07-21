@@ -15,8 +15,8 @@
   "sources": [
     {
       "type": "archive",
-      "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/archive/v2.13.1/snowflake-v2.13.1.tar.gz",
-      "sha256": "3102c0782422205f6cea7609ab67cb5fd080e048880712ebe0c85540138cc09f"
+      "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/archive/v2.14.1/snowflake-v2.14.1.tar.gz",
+      "sha256": "39aa853c9bf966ac606456b4f357631470b4bee970e256a20eab54cba8a55d2f"
     },
     "go.mod.yml"
   ]
