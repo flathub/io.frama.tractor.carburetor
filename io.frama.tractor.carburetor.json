@@ -72,8 +72,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz",
-          "sha256": "92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb",
+          "url": "https://github.com/libevent/libevent/releases/download/release-2.1.13-stable/libevent-2.1.13-stable.tar.gz",
+          "sha256": "f7e9383b8c0baa81b687e5b5eecc01beefaf1b19b64151d95ed61647fe7a315c",
           "x-checker-data": [
             {
               "type": "html",
@@ -97,8 +97,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dist.torproject.org/tor-0.4.9.9.tar.gz",
-          "sha256": "bd75ba7fd68f607c7806fcf70156a300aa926e9ad69a5e56a8e6414f5227e833",
+          "url": "https://dist.torproject.org/tor-0.4.9.11.tar.gz",
+          "sha256": "2e6c1720118c812acf0079fd47cf91b6bfaba5d766c321c4d3d2a28d6a11a8ed",
           "x-checker-data": [
             {
               "type": "html",
