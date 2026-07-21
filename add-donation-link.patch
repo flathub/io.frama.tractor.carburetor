@@ -1,0 +1,38 @@
+From e29918c86d6a864c5e7f7699390c643ca7932cd8 Mon Sep 17 00:00:00 2001
+From: Danial Behzadi <dani.behzi@ubuntu.com>
+Date: Tue, 21 Jul 2026 14:20:24 +0330
+Subject: [PATCH] Add donation url
+
+---
+ data/metainfo/io.frama.tractor.carburetor.metainfo.xml.in | 1 +
+ src/actions.py                                            | 3 +++
+ 2 files changed, 4 insertions(+)
+
+diff --git a/data/metainfo/io.frama.tractor.carburetor.metainfo.xml.in b/data/metainfo/io.frama.tractor.carburetor.metainfo.xml.in
+index 2725749..5d716fd 100644
+--- a/data/metainfo/io.frama.tractor.carburetor.metainfo.xml.in
++++ b/data/metainfo/io.frama.tractor.carburetor.metainfo.xml.in
+@@ -22,6 +22,7 @@
+   <url type="translate">https://hosted.weblate.org/engage/carburetor</url>
+   <url type="vcs-browser">https://framagit.org/tractor/carburetor</url>
+   <url type="contribute">https://framagit.org/tractor/carburetor/-/blob/main/CONTRIBUTING.md</url>
++  <url type="donation">https://liberapay.com/Tractor-Team/donate</url>
+   <launchable type="desktop-id">io.frama.tractor.carburetor.desktop</launchable>
+   <provides>
+     <binary>carburetor</binary>
+diff --git a/src/actions.py b/src/actions.py
+index 197c887..5f45ca0 100644
+--- a/src/actions.py
++++ b/src/actions.py
+@@ -103,6 +103,9 @@ def on_about(_action, _value, app) -> None:
+         )
+         about_dialog.set_developers(["Danial Behzadi <dani.behzi@ubuntu.com>"])
+         about_dialog.set_translator_credits(_("translator-credits"))
++        about_dialog.add_link(
++            _("Donate"), "https://liberapay.com/Tractor-Team/donate"
++        )
+         app.about = about_dialog
+     app.about.present(app.window)
+ 
+-- 
+2.47.3
