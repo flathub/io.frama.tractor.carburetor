@@ -74,14 +74,12 @@
           "type": "archive",
           "url": "https://github.com/libevent/libevent/releases/download/release-2.1.13-stable/libevent-2.1.13-stable.tar.gz",
           "sha256": "f7e9383b8c0baa81b687e5b5eecc01beefaf1b19b64151d95ed61647fe7a315c",
-          "x-checker-data": [
-            {
-              "type": "html",
-              "url": "https://libevent.org/",
-              "pattern": "<link>(https://github.com/libevent/libevent/releases/download/release-([d.]+)-stable/libevent-([d.]+)-stable.tar.gz)</link>",
-              "sort-matches": false
-            }
-          ]
+          "x-checker-data": {
+            "type": "html",
+            "url": "https://github.com/libevent/libevent/tags",
+            "version-pattern": "release-([\\d.]+)-stable",
+            "url-template": "https://github.com/libevent/libevent/releases/download/release-$version-stable/libevent-$version-stable.tar.gz"
+          }
         }
       ]
     },
@@ -99,14 +97,12 @@
           "type": "archive",
           "url": "https://dist.torproject.org/tor-0.4.9.11.tar.gz",
           "sha256": "2e6c1720118c812acf0079fd47cf91b6bfaba5d766c321c4d3d2a28d6a11a8ed",
-          "x-checker-data": [
-            {
-              "type": "html",
-              "url": "https://www.torproject.org/download/tor/",
-              "version-pattern": "<td>([d.]+)</td>",
-              "url-template": "https://dist.torproject.org/tor-$version.tar.gz"
-            }
-          ]
+          "x-checker-data": {
+            "type": "html",
+            "url": "https://www.torproject.org/download/tor/",
+            "version-pattern": "<td>([\\d.]+)</td>",
+            "url-template": "https://dist.torproject.org/tor-$version.tar.gz"
+          }
         }
       ]
     },
@@ -124,12 +120,11 @@
           "type": "archive",
           "url": "https://download.gnome.org/sources/dconf/0.49/dconf-0.49.0.tar.xz",
           "sha256": "16a47e49a58156dbb96578e1708325299e4c19eea9be128d5bd12fd0963d6c36",
-          "x-checker-data": [
-            {
-              "type": "gnome",
-              "name": "dconf"
-            }
-          ]
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "dconf",
+            "stable-only": true
+          }
         },
         {
           "type": "patch",
@@ -151,12 +146,10 @@
           "type": "git",
           "url": "https://framagit.org/tractor/tractor.git",
           "tag": "5.2.0",
-          "x-checker-data": [
-            {
-              "type": "git",
-              "tag-pattern": "^([d.]+)$"
-            }
-          ]
+          "commit": "61e21aae42e75f4ede8a3e3328f6c9441b310d7e",
+          "x-checker-data": {
+            "type": "git"
+          }
         },
         {
           "type": "patch",
@@ -173,13 +166,11 @@
           "type": "git",
           "url": "https://framagit.org/tractor/carburetor.git",
           "tag": "5.1.1",
-          "x-checker-data": [
-            {
-              "type": "git",
-              "tag-pattern": "^([d.]+)$",
-              "is-main-source": true
-            }
-          ]
+          "commit": "d74e74837117545d49776e20cc2719f4f17d605f",
+          "x-checker-data": {
+            "type": "git",
+            "is-main-source": true
+          }
         },
         {
           "type": "patch",
