@@ -9,14 +9,14 @@
     }
   },
   "build-commands": [
-    "CGO_ENABLED=0 go build -mod=vendor -ldflags=\"-X main.lyrebirdVersion=0.8.1\" -o obfs4proxy ./cmd/lyrebird",
+    "CGO_ENABLED=0 go build -mod=vendor -ldflags=\"-X main.lyrebirdVersion=0.9.0\" -o obfs4proxy ./cmd/lyrebird",
     "install -Dm755 obfs4proxy -t ${FLATPAK_DEST}/lyrebird/pts"
   ],
   "sources": [
     {
       "type": "archive",
-      "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird/-/archive/lyrebird-0.8.1/lyrebird-lyrebird-0.8.1.tar.gz",
-      "sha256": "4486a6adcce20b78c3de4f5604d0c1500d049beca9ba322c1fd65813c79a30e2"
+      "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird/-/archive/0.9.0/lyrebird-0.9.0.tar.gz",
+      "sha256": "834a8855786c55bddc3a3085cc792642364ff067aad23f1b88086f456d4fd6b8"
     },
     "go.mod.yml"
   ]
