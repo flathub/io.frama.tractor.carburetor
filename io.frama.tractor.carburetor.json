@@ -95,12 +95,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dist.torproject.org/tor-0.4.9.13.tar.gz",
-          "sha256": "5e748d3272cdf44a7d7741173f371c8def3d96eecb77e93c89c50663ce9cc792",
+          "url": "https://dist.torproject.org/tor-0.4.9.15.tar.gz",
+          "sha256": "1911f5b216a6814ed143a08bbcff1c6dc96d2ca3b505df9a21876080a92963f3",
           "x-checker-data": {
             "type": "html",
             "url": "https://www.torproject.org/download/tor/",
-            "version-pattern": "<td>([\\d.]+)</td>",
+            "version-pattern": ">Tor ([\\d.]+)</p>",
             "url-template": "https://dist.torproject.org/tor-$version.tar.gz"
           }
         }
