@@ -175,6 +175,10 @@
         {
           "type": "patch",
           "path": "add-donation-link.patch"
+        },
+        {
+          "type": "patch",
+          "path": "fix-transport-type-reset.patch"
         }
       ],
       "post-install": [
