@@ -1,0 +1,27 @@
+From c159bedb0624c868672e7551b3a921e958dd4917 Mon Sep 17 00:00:00 2001
+From: Danial Behzadi <dani.behzi@ubuntu.com>
+Date: Tue, 24 Nov 2026 14:00:17 +0330
+Subject: [PATCH] Fix a bug where transport type got reset.
+
+Closes: #96
+---
+ src/handler.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/src/handler.py b/src/handler.py
+index e61812d..c751656 100644
+--- a/src/handler.py
++++ b/src/handler.py
+@@ -327,6 +327,9 @@ def on_bridgetypecombo_realize(combo):
+     """
+     create and set model for bridge type
+     """
++    if combo.get_model():
++        # Already initialized
++        return
+     bridgetype = db.get_val("bridge-type")
+     # Define and populate the model
+     model = Gio.ListStore(item_type=BridgeType)
+-- 
+2.47.3
+
